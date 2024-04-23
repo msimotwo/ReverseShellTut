@@ -4,6 +4,7 @@
 
 <h4><p align="center">Welcome! This repository is your gateway to understanding reverse shells. If you're new to cybersecurity or curious about remote access methods, you're in the right place. We'll explain reverse shells in simple terms, empowering you to navigate this crucial aspect of digital security with confidence. For this lesson, I will be referring to NetworkChuck's video on how setup a Cloud enviroment for the attacking machine and our target machine. After this lesson, you will understand the importance and reason behind reverse shells. </h4>
 
+[Video](https://www.youtube.com/watch?v=bXCeFPNWjsM&t=267s)
 ***
 
 
@@ -48,3 +49,25 @@ Once you've setup your Linode, look at the top right underneath the name of the 
 ssh root@"fill in with your SSH Access"
 ```
 3. Once you've entered the command line and press enter, it will prompt with "Are you sure you want to continue connecting?". Type "yes", then type your Root password. Then VIOLA! you're connected.
+
+*<i><p align="center">Now lets understand NetCat</i>*
+
+1. To go ahead and first check if NetCat is installed, type in the command line "nc"
+ ```bash
+# Command to copy
+nc
+```
+2. Now going forward, since we are using NetCat to reverse shell, we have to make sure both clients both have NetCat installed. In this matter, since both are Linux machines, they both already come with NetCat installed.
+3. Now we are going to use this command to see if it is listening.When picking the port, use a port # that is below 1000. L = Listen, N = IP Address Only, V = Verbose, P = Port
+ ```bash
+# Command to copy
+nc -lvnp "port #" -s "Ip address from Linode"
+```
+Example: nc -lnvp 87 -s 192.168.1.1
+
+4. Now once you've completed that part, it should prompt with a command line that is listening on that IP.
+
+*<i><p align="center">Now let's set up the **target** machine in KaliLinux</i>*
+
+1. 
+
