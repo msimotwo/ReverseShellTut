@@ -1,4 +1,4 @@
-<h2><p align="center">Reverse Shells</h2>
+<h2><p align="center">Reverse Shell</h2>
 
 <h3><p align="center">*ONLY FOR EDUCATIONAL PURPOSES ONLY*</h3>
 
