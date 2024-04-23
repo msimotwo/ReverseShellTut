@@ -8,7 +8,7 @@
 ***
 
 
-<h3>What are Reverse Shells?</h3>
+<h3>What are Reverse Shell's?</h3>
 
 Reverse shells are a type of shell session where a target machine connects back to an attacker's machine, rather than the other way around. This is typically used in scenario's where the target machine is behind a firewall or NAT and cannot accept incoming connections.
 
