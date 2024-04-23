@@ -16,7 +16,7 @@ Here is a Step-by-Step on how it works
 2. Once that connection has established, the **attacker** can now gain access thru the shell on the **target** machine. This allows them to execute commands and interact with the system as if it had physical access to it.
 3. This connection is typically encrypted to prevent detection and interception by security measures.
 
-In this lab we will also be using ConPtyShell. Used in cybersecurity, it's like a special type of phone call that helps hackers get into computer systems. When they use ConPtyShell, they can pretend to be someone important and trick the computer into letting them in.
+In this lab, we'll also explore the use of Netcat for creating reverse shells. Netcat, a versatile networking tool, acts like a direct line between computers. Think of it as setting up a secret phone call where the target computer calls back to the attacker's system. This enables hackers to gain remote access and control over the target, just like having a direct line to the computer's command center.
 
 ***
 
@@ -41,3 +41,10 @@ Once you've setup your Linode, look at the top right underneath the name of the 
 
 *<i><p align="center">Now that we have our Linode setup, its time to login into the enviroment.</i>*
 
+!. Look for your SSH Access and copy it. *(Look at the right side of the top portion of the Linode page and look for Access -> SSH Access)*
+2. Open Command Prompt and type in this following command.
+```bash
+# Command to copy
+ssh root@"fill in with your SSH Access"
+```
+3. Once you've entered the command line and press enter, it will prompt with "Are you sure you want to continue connecting?". Type "yes", then type your Root password. Then VIOLA! you're connected.
